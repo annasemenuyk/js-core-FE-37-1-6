@@ -280,8 +280,8 @@ function checkPassword(password) {
 };
 console.log(checkPassword("jqueryismyjam"));
 console.log(checkPassword("angul4r1sl1f3"));
-console.log(checkPassword("r3actsux"));*/
-                                  27
+console.log(checkPassword("r3actsux"));
+27
 function getSubscriptionPrice(type) {
   let price;
   // Change code below this line
@@ -354,8 +354,87 @@ console.log(getShippingCost("Germany"));
 console.log(getShippingCost("China"));
 console.log(getShippingCost("Chile"));
 console.log(getShippingCost("Jamaica"));
-console.log(getShippingCost("Sweden"));
+console.log(getShippingCost("Sweden"));*/
+                     30
+function getNameLength(name) {
+  const message = `Name ${name} is ${name.length} characters long`; // Change this line
+  return message;
+};
+console.log(getNameLength("Poly"));
+console.log(getNameLength("Harambe"));
+console.log(getNameLength("Billy"));
+console.log(getNameLength("Joe"));
+31
+const courseTopic = "JavaScript essentials";
+// Change code below this line
 
+const courseTopicLength = courseTopic.length;
+const firstElement = courseTopic[0];
+const lastElement = courseTopic[courseTopic.length - 1];
+console.log(courseTopic);
+console.log(courseTopicLength);
+console.log(firstElement);
+console.log(lastElement);
+// Change code above this line
+32
+function getSubstring(string, length) {
+  const substring = string.slice(0, length); // Change this line
 
-
+  return substring;
+};
+console.log(getSubstring("Hello world", 3));
+console.log(getSubstring("Hello world", 6));
+console.log(getSubstring("Hello world", 8));
+console.log(getSubstring("Hello world", 11));
+console.log(getSubstring("Hello world", 0));
+33
+function formatMessage(message, maxLength) {
+  let result;
+  // Change code below this line
+message.length<=maxLength ? result=message : result=message.slice(0, maxLength)+'...';
+  /// Change code above this line
+  return result;
+};
+console.log(formatMessage("Curabitur ligula sapien", 16));
+console.log(formatMessage("Curabitur ligula sapien", 23));
+console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+34
+function normalizeInput(input) {
+  const normalizedInput =input.toLowerCase(); // Change this line
+  return normalizedInput;
+};
+console.log(normalizeInput("Hello world"));
+console.log(normalizeInput("This ISN'T SpaM"));
+console.log(normalizeInput("Big SALE"));
+35
+function checkForName(fullName, name) {
+  const result = fullName.includes(name); // Change this line
+  return result;
+ };
+ console.log(checkForName("Egor Kolbasov", "Egor"));
+ console.log(checkForName("Egor Kolbasov", "egor"));
+ console.log(checkForName("Egor Kolbasov", "egOr"));
+ console.log(checkForName("Egor Kolbasov", "Zhenya"));
+ console.log(checkForName("Vadim Nekrasov", "Vadim"));
+ console.log(checkForName("Vadim Nekrasov", "vadim"));
+ console.log(checkForName("Vadim Nekrasov", "Dima"));
+ 36
+ function checkForSpam(message) {
+  let result;
+  // Change code below this line
+  message=message.toLowerCase()
+  result = message.includes('spam') || message.includes('sale');
+  // Change code above this line
+  return result;
+};
+console.log(checkForSpam("Latest technology news"));
+console.log(checkForSpam("JavaScript weekly newsletter"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("Amazing SalE, only tonight!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
