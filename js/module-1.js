@@ -1,4 +1,4 @@
-/* 4
+4
 let topSpeed = 160;
 let distance = 617.54;
 const login = "mango935";
@@ -204,8 +204,8 @@ console.log(checkStorage(100, 130));
 console.log(checkStorage(70, 0));
 console.log(checkStorage(200, 20));
 console.log(checkStorage(200, 250));
-console.log(checkStorage(150, 0)); */
-                                 /*  21
+console.log(checkStorage(150, 0)); 
+                                  21
 function isNumberInRange(start, end, number) {
   const isInRange = number>=start && number<=end; // Change this line
   return isInRange;
@@ -354,7 +354,7 @@ console.log(getShippingCost("Germany"));
 console.log(getShippingCost("China"));
 console.log(getShippingCost("Chile"));
 console.log(getShippingCost("Jamaica"));
-console.log(getShippingCost("Sweden"));*/
+console.log(getShippingCost("Sweden"));
                      30
 function getNameLength(name) {
   const message = `Name ${name} is ${name.length} characters long`; // Change this line
