@@ -1,4 +1,4 @@
-4
+/* 4
 let topSpeed = 160;
 let distance = 617.54;
 const login = "mango935";
@@ -438,3 +438,4 @@ console.log(checkForSpam("Trust me, this is not a spam message"));
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
 console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
+ */
