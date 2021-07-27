@@ -118,6 +118,16 @@ console.log(slugify("Arrays for begginers"));
 console.log(slugify("English for developer"));
 console.log(slugify("Ten secrets of JavaScript"));
 console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));*/
+14
+const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// Change code below this line
+const firstTwoEls = fruits.slice(3,4);
+const nonExtremeEls = fruits.shift() && fruits.pop() ;
+const lastThreeEls = fruits.slice(3,4);
+console.log(firstTwoEls);
+console.log(nonExtremeEls);
+console.log(lastThreeEls);
 
 
 
