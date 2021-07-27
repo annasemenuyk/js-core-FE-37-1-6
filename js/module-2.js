@@ -117,23 +117,84 @@ return slug;
 console.log(slugify("Arrays for begginers"));
 console.log(slugify("English for developer"));
 console.log(slugify("Ten secrets of JavaScript"));
-console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));*/
+console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
 14
 const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
 // Change code below this line
-const firstTwoEls = fruits.slice(3,4);
-const nonExtremeEls = fruits.shift() && fruits.pop() ;
-const lastThreeEls = fruits.slice(3,4);
+const firstTwoEls = fruits.slice(0, 2);
 console.log(firstTwoEls);
+
+const nonExtremeEls = fruits.slice(1, 4);
 console.log(nonExtremeEls);
+
+const lastThreeEls = fruits.slice(-3);
 console.log(lastThreeEls);
+15
+const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Peach', 'Houston'];
 
+const allClients = oldClients.concat(newClients); // Change this line
+16
+function makeArray(firstArray, secondArray, maxLength) {
+  // Change code below this line
+  let newArray = firstArray.concat(secondArray);
+  if(newArray.length>maxLength){
+    return firstArray.concat(secondArray).slice(0, maxLength);
+  }
+  return newArray;
+    // Change code above this line
+  };
+  17
+  const start = 3;
+const end = 7;
 
+for (let i = start; i <= end; i +=1 )  { // Change this line
+  console.log(i);
+}
+18
+function calculateTotal(number) {
+  // Change code below this line
+  let sum = 0;
+  for (let i = 0; i <= number; i +=1 )  {
+  sum +=i; }
+  return sum;
+    // Change code above this line
+ };
+ console.log(calculateTotal(1));
+ console.log(calculateTotal(3));
+ console.log(calculateTotal(7));
+ console.log(calculateTotal(18));
+ console.log(calculateTotal(24));
+ console.log(calculateTotal());
+ 19
+ const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-
-
-
-
-    
-  
+for (let i = 0; i < fruits.length; i +=1 ) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
+20
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  for (let i = 0; i < order.length; i += 1)  {
+    total += order[i];}
+   // Change code above this line
+  return total;
+};
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log(calculateTotalPrice([164, 48, 291]));
+console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+console.log(calculateTotalPrice());*/
+21
+function findLongestWord(string) {
+  // Change code below this line
+  let words = string.toLowerCase();
+  let word = words.split(' ');
+   for (let i = 0; i < word.length; i += 1)  {
+    word += word.length;}
+  return word;
+  // Change code above this line
+};
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
