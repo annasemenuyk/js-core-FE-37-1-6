@@ -212,22 +212,42 @@ function createArrayOfNumbers(min, max) {
 };
 console.log(1, 3);
 console.log(14, 17);
-console.log(29, 34);*/
+console.log(29, 34);
 23
 function filterArray(numbers, value) {
     // Change code below this line
-  let newnumbers[];
-  for (let i = 0; i <= value; i += 1 ){
-      newnumbers.push(i);
-  }
-  return newnumbers[];
- // Change code above this line
-};
+    let newNumbers = [];
+    for (const number of numbers) {
+      if (number > value) {
+       newNumbers.push(number);
+      }
+    }
+    return newNumbers;};
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
 console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
 console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
 console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+24 
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit);
+  // Change this line
+}
+25
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  let arr
+  const addArrey = []
+  for (let arr of array1) {
+    if (array2.includes(arr)) {
+      addArrey.push(arr);
+     }
+   }
+   return addArrey;
+ // Change code above this line
+}*/
 
 
 
