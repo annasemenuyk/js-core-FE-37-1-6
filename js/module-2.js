@@ -296,7 +296,7 @@ console.log(a);
 console.log(b);
 console.log(c);
 console.log(d);
-console.log(e);*/
+console.log(e);
 function getEvenNumbers(start, end) {
   // Change code below this line
   let evenNambers = [];
@@ -309,4 +309,4 @@ function getEvenNumbers(start, end) {
 console.log(getEvenNumbers(2, 5)); //возвращает [2, 4]
 console.log(getEvenNumbers(3, 11)); //возвращает [4, 6, 8, 10]
 console.log(getEvenNumbers(6, 12)); //возвращает [6, 8, 10, 12]
-console.log(getEvenNumbers(8, 8)); //возвращает [8]
+console.log(getEvenNumbers(8, 8)); //возвращает [8]*/
