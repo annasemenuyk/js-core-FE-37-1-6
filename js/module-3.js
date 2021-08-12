@@ -200,18 +200,26 @@ const keys = Object.keys(apartment);
 for(let key of keys){
   values.push(apartment[key]);
 };
-console.log(values);*/
+console.log(values);
 14
 function countProps(object) {
   // Change code below this line
   let propCount = 0;
-
-  for (const key in object) {
-    if (object.hasOwnProperty(key)) {
+const keys = Object.keys(object)
+  for (const key of keys) {
+    if (Object.keys(key)) {
       propCount += 1;
     }
   }
-
-  return propCount;
+  return keys.length;
   // Change code above this line
-}
+}*/
+15
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+// Change code below this line
+const keys = apartment;
+const values = apartment;
